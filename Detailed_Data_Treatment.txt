@@ -53,7 +53,7 @@ Additional changes:
 3) The text was processed (by the TarotMeaningsExtraction.py script) to create a .json from the document, taking advantage of the structured format of the text.
 The following regex were used:
 	a) Card name pattern: ".+\n\s*\n"
-	b) Sections pattern:  ".+\n("(\s|\*)\s.+\n")+"
+	b) Sections pattern:  ".+\n((\s|\*)\s.+\n)+"
 		b.1) Subsection pattern: "(\s|\*)\s.+\n" (a section isn't finished until the next line isn't a subsection)
 	c) Separator pattern: "\n\n"
 	
