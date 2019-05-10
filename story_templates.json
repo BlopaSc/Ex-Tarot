@@ -1,0 +1,85 @@
+{
+    "seasons": [
+        "SPRING",
+        "SUMMER",
+        "FALL",
+        "WINTER"
+    ],
+    "story_types": [
+        "comedy",
+        "tragedy",
+        "adventure"
+    ],
+    "comedy": {
+        "story": "Jack is the best in the world at one thing: $0.<br>But when Jack $1, he $2.<br>Now it's up to his best friend Jill to $3, and in doing so help Jack $4.<br>",
+        "sides": [
+            "light",
+            "shadow",
+            "shadow",
+            "light",
+            "light"
+        ],
+        "tenses": [
+            "present_participle",
+            "present",
+            "present",
+            "infinitive",
+            "infinitive"
+        ],
+        "person": [
+            "third_male",
+            "third_male",
+            "third_male",
+            "third_male",
+            "third_male"
+        ]
+    },
+    "tragedy": {
+        "story": "Jack wants most of all to $0, and all he needs to do to get there is $1.<br>Things are looking up in response, and Jack finds himself $2.<br>But then the tide turns and Jack $3.<br>In the end, Jack loses the battle and is remembered only for $4.<br>",
+        "sides": [
+            "light",
+            "shadow",
+            "light",
+            "shadow",
+            "shadow"
+        ],
+        "tenses": [
+            "infinitive",
+            "infinitive",
+            "present_participle",
+            "present",
+            "present_participle"
+        ],
+        "person": [
+            "third_male",
+            "third_male",
+            "third_male",
+            "third_male",
+            "third_male"
+        ]
+    },
+    "adventure": {
+        "story": "In a world plagued by people $0, a group of unexpected characters will bring a change.<br>Join Jack, Jake and Jill on their path towards $1,<br>where they will find how to $2.<br>But to get there they may have to $3,<br>and prove that they are willing to $4 to succeed.<br>",
+        "sides": [
+            "shadow",
+            "light",
+            "light",
+            "shadow",
+            "light"
+        ],
+        "tenses": [
+            "present_participle",
+            "present_participle",
+            "infinitive",
+            "infinitive",
+            "infinitive"
+        ],
+        "person": [
+            "third_plural",
+            "third_male",
+            "third_male",
+            "third_male",
+            "third_male"
+        ]
+    }
+}

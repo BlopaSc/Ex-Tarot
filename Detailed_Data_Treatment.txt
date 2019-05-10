@@ -1,0 +1,97 @@
+1) Downloaded the original "A Guide to Tarot Card Meanings" by Mark McElroy from: http://tarottools.com/2014/07/06/my-latest-book-belongs-to-you/
+
+2) Trimmed the text by removing the following sections:
+- Title
+- Table of Contents
+- Dedication
+- Uncopyright Notice
+- Author's Preface
+- Making the Most of Meaning (and subsections)
+- The Major Arcana
+	- In This Chapter
+- The Minor Arcana
+	- The Suit Cards
+	- The Pip Cards
+	- The Court Cards
+- Suit of Wands header
+- Suit of Cups header
+- Suit of Swords header
+- Suit of Coins header
+
+The final result for this step was the file "tarot_meanings.txt" file which has the following characteristics:
+	> Starts with the first card of the major arcana (Trump 0: The Fool)
+	> Each card follows the following structure:
+		<name of card>
+		<empty line>
+		Keywords
+			<Keywords>
+		Range of Meaning
+			Light: <Light Meaning>
+			Shadow: <Shadow Meaning>
+		Correspondences
+			<Correspondences>
+		Advice
+			<Advice>
+		Symbols and Insights
+			<Symbols>
+		Question to Ask
+			<Questions>
+		<empty line>
+		<empty line>
+	> After each card, another card starts unless at the EOF
+	
+Additional changes: 
+	> Removed an extra space at the end of the Shadow - Meanings of the card The Wheel
+	> Removed an extra space at the end of the Light - Meanings of the card Ten of Coins 
+	> Changed the word Winning to Win in the Fortune-telling section of the card The World
+	> Changed the word Getting to Get in the Fortune-telling section of the card The World
+	> Changed the word Having to Have in the Fortune-telling section of the card The World
+	> Changed to "Taking ill-informed decisions" the last Shadow meaning of the card The Lovers
+	> Changed to "Pretending to have more romantic or spiritual experience than you possess" the last Shadow meaning of the card Page of Cups
+	> Changed to "Pretending to have knowledge or sophistication you do not possess" the first Shadow meaning of the card Page of Swords
+
+3) The text was processed (by the TarotMeaningsExtraction.py script) to create a .json from the document, taking advantage of the structured format of the text.
+The following regex were used:
+	a) Card name pattern: ".+\n\s*\n"
+	b) Sections pattern:  ".+\n("(\s|\*)\s.+\n")+"
+		b.1) Subsection pattern: "(\s|\*)\s.+\n" (a section isn't finished until the next line isn't a subsection)
+	c) Separator pattern: "\n\n"
+	
+With the use of those regex the following information about each card were extracted:
+	Name of the card
+	Suit of the card: major/wands/cups/swords/coins
+	Rank of the card: 0-21 for major arcana cards, 1-14 for minor arcana cards
+	Keywords: lower cased, separated into array of strings
+	Range of meanings: Separated into light and shadow meanings, each of them being an array of strings where each string is an interpretation
+	Advice - Fortune telling: Separated into sentences
+	
+	> It's possible to extend the current extractor to extract any other data deemed of relevance
+	
+The final result for this step was the file "tarot_meanings_extract.json", with the cards relevant information extracted and ordered in a logical manner.
+
+4) The "tarot_meanings_extract.json" was processed (by the TarotStoriesGeneration.py script) to create a .json document which adds new information to the .json structure.
+	The script grabs all the light and shadow meanings of each of the cards and proceeds to generate a sentence in the past, present, present_participle, future and infinite tenses.
+	This senteces are generated using the nltk and simplenlg python libraries using the following guidelines:
+		> Every meaning sentence is tokenized using nltk and tagged to its' respective type
+		> The sentence is transformed to the specified sentences by transforming the pronouns (from 2nd to 3rd male, female and plural forms) and the necessary verbs 
+			> Some gerunds and other verbs need to stay the same while other do need to be transformed, a special set of rules is applied
+			> Also a collection of verbs by Ashley Bovan (http://www.ashley-bovan.co.uk/words/partsofspeech.html) is used to verify the validity of the identified and tensed verbs
+			> While good enough, the generated sentences might not be perfect. Any improvement is more than welcome.
+	
+The result for this step was the file "tarot_stories.json", with the relevant information for each of the cards.
+
+5) Finally the story_templates.json file was developed, including modified versions for the Comedy and Tragedy templated described by Anne Sullivan, Mirjam Palosaari and Michael Cook (also available at https://github.com/annetropy/tarot-narrative).
+
+> The file remains easily modify-able, to include a new story template simply include the name of the template to the "story_types" array. Then add the story template dictionary following the same guidelines used for the previous types.
+
+> A story template consists of the following structure:
+"name_of_story_template" : {
+	"story" : "Story consisting of $index (starting at 0) for the blank spaces to be filled with drawn cards and using HTML encoding.",
+	"sides" : [An array consisting of the strings "light" and "shadow" for each of the cards to be used in the story],
+	"tenses" : [An array consisting of the strings "past", "present", "future", "present_participle" and "infinitive" for each of the cards to be used in the story],
+	"person" : [An array consisting of the strings "third_female", "third_male", "third_plural" for each of the cards to be used in the story]
+}
+
+6) The stories can be generated by using the desired template from the "tarot_stories.json" and filling each of the blanks of the story with the specified side, tense and person.
+	The data for this blanks is taken from the "tarot_stories.json" which has different meanings for each of the cards in a given side, tense and person.
+	A random meaning or a specific meaning can be taken for each of the cards.
