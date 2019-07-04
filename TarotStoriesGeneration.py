@@ -103,6 +103,7 @@ with open('tarot_meanings_extract.json', 'r') as meanings_file:
 									if verb not in verbs:
 										# If last two consonants are the same, remove one
 										if len(root)>2 and root[-1]==root[-2]:
+											print(verb)
 											p.setVerb(root[:-1])
 										# If ends in -ck, drop the k
 										elif root.endswith("ck"):
@@ -174,3 +175,4 @@ with open('tarot_meanings_extract.json', 'r') as meanings_file:
 	# Save as json
 	with open('tarot_stories.json', 'w') as tarot_out:
 		json.dump(tarot, tarot_out,indent = 4)
+		
