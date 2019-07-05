@@ -37,8 +37,6 @@ with open('tarot_stories.json', 'r') as stories_file:
 		templates = json.load(templates_file)
 		
 		for i in range(1):
-		
-			output = "THIS "+random.choice(templates['seasons'])+", "+random.choice(random.choice(tarot['interpretations'])['fortune_telling']).lower()+"<br><br>"
 	
 			story_type = random.choice(templates['story_types'])
 			
@@ -50,6 +48,8 @@ with open('tarot_stories.json', 'r') as stories_file:
 			
 			random.shuffle(cards)
 			random.shuffle(characters)
+			
+			output = "THIS "+random.choice(templates['seasons'])+", "+random.choice(cards[0]['fortune_telling']).lower()+"<br><br>"
 			
 			for i in range(story.count('$')):
 				if idents[i][0]=='character':
