@@ -36,7 +36,6 @@ def print_combination_info(tarot):
 with open('tarot_stories.json', 'r') as stories_file:
 	tarot = json.load(stories_file)		
 	with open('story_templates.json','r') as templates_file:
-		print_combination_info(tarot)
 		
 		templates = json.load(templates_file)
 		
@@ -45,22 +44,18 @@ with open('tarot_stories.json', 'r') as stories_file:
 		story_type = random.choice(templates['story_types'])
 		
 		story = templates[story_type]['story']
-		tenses = templates[story_type]['tenses']
-		person = templates[story_type]['person']
-		sides = templates[story_type]['sides']
+		idents = templates[story_type]['identifiers']
 		
-		characters = sum([tense=='character' for tense in tenses])
-        
-		cards = random.sample(tarot['interpretations'],len(tenses))
-        # Sample major arcana characters
-        
-		for i in range(len(sides)):
+		cards = random.sample(tarot['interpretations'],story.count('$'))
+		# Sample major arcana characters
+		
+		for i in range(story.count('$')):
 			
-			if tenses[i]=='character':
+			if idents[i][0]=='character':
 				pass
 				# get random major arcana character
-			else:
-				story = story.replace("$"+str(i),random.choice(cards[i]['stories'][person[i]][sides[i]][tenses[i]]))
+			elif idents[i][0]=='story':
+				story = story.replace("$",random.choice(cards[i]['stories'][idents[i][3]][idents[i][1]][idents[i][2]]),1)
 		output += story
 		print(output.replace("<br>","\n"))
 		

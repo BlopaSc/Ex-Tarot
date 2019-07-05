@@ -70,7 +70,7 @@ with open('tarot_meanings_extract.json', 'r') as meanings_file:
 				# And for each of the meanings, calculate the infinitive, past, present, present_participle and future tenses of the meaning
 				for meaning in card['meanings'][side]:
 					# Separate merged words, tokenize and tag
-					story = meaning.lower().replace("you're","you are").replace("you've","you have")
+					story = meaning.lower().replace("you're","you are").replace("you've","you have").replace("-"," ")
 					tokens = nltk.word_tokenize(story)
 					tagged = nltk.pos_tag(tokens)
 					# Verb at first position is assumed
@@ -85,14 +85,14 @@ with open('tarot_meanings_extract.json', 'r') as meanings_file:
 					for tagged_index,tag in enumerate(tagged):
 						space = ("" if tagged_index==0 else " ")
 						# If word is verb and verbs needs to be transformed (first verb) or comes after subjective pronoun
-						if (transform_verb or subjective_pronoun) and tag[1][0]=='V':
-							root = tag[0][:tag[0].find("ing")]
+						if (transform_verb or subjective_pronoun) and (tag[1][0]=='V' or tag[1]=='NN'):
+							root = tag[0][:-3] if tag[0].endswith("ing") else tag[0]
 							p.setFeature(simplenlg.Feature.FORM,simplenlg.Form.NORMAL)
 							p.setVerb(tag[0])
 							p.setTense(simplenlg.Tense.PAST)
 							verb = realiser.realiseSentence(p).lower()[len(person)+1:-1]
 							# If initial detection fails, try to detect root
-							if verb.find("inged")>=0:
+							if verb.endswith("inged"):
 								p.setVerb(root)
 								verb = realiser.realiseSentence(p).lower()[len(person)+1:-1]
 								if verb not in verbs:
@@ -103,7 +103,6 @@ with open('tarot_meanings_extract.json', 'r') as meanings_file:
 									if verb not in verbs:
 										# If last two consonants are the same, remove one
 										if len(root)>2 and root[-1]==root[-2]:
-											print(verb)
 											p.setVerb(root[:-1])
 										# If ends in -ck, drop the k
 										elif root.endswith("ck"):
@@ -153,7 +152,7 @@ with open('tarot_meanings_extract.json', 'r') as meanings_file:
 							else:
 								word=("" if tag[0]==',' else space)+tag[0]
 							# After a CC, see if next word is gerund verb which is part of sentence
-							if tag[1]=="CC" and tagged[tagged_index+1][1]=='VBG' and tagged[tagged_index+1][0] not in ["misguiding","teaching"]:
+							if tag[1]=="CC" and tagged[tagged_index+1][1] in ['VBG','NN'] and tagged[tagged_index+1][0] not in ["misguiding","teaching"]:
 								transform_verb = True
 							past += word
 							present += word
