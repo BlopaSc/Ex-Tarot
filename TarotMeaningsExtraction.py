@@ -126,6 +126,13 @@ with open(filename,"r") as tarot:
 	tarot_meanings['description'] = "Tarot card interpretations from Mark McElroy's \"A Guide to Tarot Meanings\" (http://tarottools.com/2014/07/06/my-latest-book-belongs-to-you/)"
 	tarot_meanings['interpretations'] = cards
 	
+	with open('major_arcana_characterizations.json','r') as characterizations:
+		loaded = json.load(characterizations)
+		chars = loaded['characterizations']
+		for card in tarot_meanings['interpretations']:
+			if card['suit']=='major':
+				card['characterizations'] = chars[card['rank']]
+	
 	# Save as json
 	with open('tarot_meanings_extract.json', 'w') as tarot_out:
 		json.dump(tarot_meanings, tarot_out,indent = 4)

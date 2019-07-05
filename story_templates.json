@@ -21,8 +21,9 @@
 		]
     },
     "tragedy": {
-        "story": "Jack wants most of all to $, and all he needs to do to get there is $.<br>Things are looking up in response, and Jack finds himself $.<br>But then the tide turns and Jack $.<br>In the end, Jack loses the battle and is remembered only for $.<br>",
+        "story": "Jack the $ wants most of all to $, and all he needs to do to get there is $.<br>Things are looking up in response, and Jack finds himself $.<br>But then the tide turns and Jack $.<br>In the end, Jack loses the battle and is remembered only for $.<br>",
         "identifiers": [
+			["character","shadow"],
 			["story","light","infinitive","third_male"],
 			["story","shadow","infinitive","third_male"],
 			["story","light","present_participle","third_male"],
@@ -31,9 +32,10 @@
 		]
     },
     "adventure": {
-        "story": "In a world plagued by people $, a group of unexpected characters will bring a change.<br>Join Jack, Jake and Jill on their path towards $,<br>where they will find how to $.<br>But to get there they may have to $,<br>and prove that they are willing to $ to succeed.<br>",
+        "story": "In a world plagued by people $, a group of unexpected characters will bring a change.<br>Join Jack the $, Jake and Jill on their path towards $,<br>where they will find how to $.<br>But to get there they may have to $,<br>and prove that they are willing to $ to succeed.<br>",
         "identifiers": [
 			["story","shadow","present_participle","third_plural"],
+			["character","light"],
 			["story","light","present_participle","third_plural"],
 			["story","light","infinitive","third_plural"],
 			["story","shadow","infinitive","third_plural"],

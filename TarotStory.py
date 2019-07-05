@@ -11,8 +11,6 @@ def calculate_combinations(n,cards,sides,avg_meanings,persons,times):
 	for i in range(n):
 		perm *= (cards-i)
 	return perm * ((sides*avg_meanings*persons*times)**n) 
-	
-
 def print_combination_info(tarot):
 	cards = len(tarot['interpretations'])
 	sides = len(tarot['interpretations'][0]['meanings'])
@@ -30,7 +28,6 @@ def print_combination_info(tarot):
 		old =  calculate_combinations(i,cards,sides,1,1,4)
 		new = calculate_combinations(i,cards,sides,avg_meanings,persons,times)
 		print("%i:\t%i\t%i\t%.2f"%(i, old, new, new/old))
-	
 	print("\n")
 
 with open('tarot_stories.json', 'r') as stories_file:
@@ -39,23 +36,26 @@ with open('tarot_stories.json', 'r') as stories_file:
 		
 		templates = json.load(templates_file)
 		
-		output = "THIS "+random.choice(templates['seasons'])+", "+random.choice(random.choice(tarot['interpretations'])['fortune_telling']).lower()+"<br><br>"
-
-		story_type = random.choice(templates['story_types'])
+		for i in range(1):
 		
-		story = templates[story_type]['story']
-		idents = templates[story_type]['identifiers']
-		
-		cards = random.sample(tarot['interpretations'],story.count('$'))
-		# Sample major arcana characters
-		
-		for i in range(story.count('$')):
+			output = "THIS "+random.choice(templates['seasons'])+", "+random.choice(random.choice(tarot['interpretations'])['fortune_telling']).lower()+"<br><br>"
+	
+			story_type = random.choice(templates['story_types'])
 			
-			if idents[i][0]=='character':
-				pass
-				# get random major arcana character
-			elif idents[i][0]=='story':
-				story = story.replace("$",random.choice(cards[i]['stories'][idents[i][3]][idents[i][1]][idents[i][2]]),1)
-		output += story
-		print(output.replace("<br>","\n"))
+			story = templates[story_type]['story']
+			idents = templates[story_type]['identifiers']
+			
+			cards = [card for card in tarot['interpretations']]
+			characters = [card for card in tarot['interpretations'] if card['suit']=='major']
+			
+			random.shuffle(cards)
+			random.shuffle(characters)
+			
+			for i in range(story.count('$')):
+				if idents[i][0]=='character':
+					story = story.replace("$", random.choice(characters[i%len(characters)]['characterizations'][idents[i][1]]),1)
+				elif idents[i][0]=='story':
+					story = story.replace("$",random.choice(cards[i%len(cards)]['stories'][idents[i][3]][idents[i][1]][idents[i][2]]),1)
+			output += story
+			print(output.replace("<br>","\n"))
 		

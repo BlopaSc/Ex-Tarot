@@ -36,7 +36,15 @@
                 "Watch for new projects and new beginnings",
                 "Prepare to take something on faith",
                 "Something new comes your way; go for it"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "innocent"
+                ],
+                "shadow": [
+                    "reckless"
+                ]
+            }
         },
         {
             "name": "The Magician",
@@ -68,7 +76,15 @@
             "fortune_telling": [
                 "A powerful man may play a role in your day",
                 "Your current situation must be seen as one element of a much larger plan"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "resourceful"
+                ],
+                "shadow": [
+                    "manipulative"
+                ]
+            }
         },
         {
             "name": "The Papess/High Priestess",
@@ -103,7 +119,15 @@
                 "A mysterious woman arrives",
                 "A sexual secret may surface",
                 "Someone knows more than he or she will reveal"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "intuitive"
+                ],
+                "shadow": [
+                    "secretive"
+                ]
+            }
         },
         {
             "name": "The Empress",
@@ -139,7 +163,15 @@
                 "Pregnancy is in the cards",
                 "An opportunity to be involved in luxurious sexuality is coming",
                 "Beware a tendency toward addiction"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "beautiful"
+                ],
+                "shadow": [
+                    "needful"
+                ]
+            }
         },
         {
             "name": "The Emperor",
@@ -172,7 +204,15 @@
                 "A father figure arrives",
                 "A new employer or authority figure will give you orders",
                 "Expect discipline or correction in the near future"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "fatherly"
+                ],
+                "shadow": [
+                    "dictatorial"
+                ]
+            }
         },
         {
             "name": "The Pope/Hierophant",
@@ -207,7 +247,15 @@
                 "Expect to be caught in a misdeed and punished accordingly",
                 "Pray for forgiveness and confess wrongdoings",
                 "A more experienced man, spiritual leader, or father figure will come into your life"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "spiritual"
+                ],
+                "shadow": [
+                    "immoral"
+                ]
+            }
         },
         {
             "name": "The Lovers",
@@ -240,7 +288,15 @@
                 "A new personal or professional relationship blossoms",
                 "Sexual opportunities abound",
                 "Unexpectedly, a friend becomes a lover"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "lovely"
+                ],
+                "shadow": [
+                    "selfish"
+                ]
+            }
         },
         {
             "name": "The Chariot",
@@ -272,7 +328,15 @@
                 "Victory is a certainty",
                 "Move ahead with all plans",
                 "Beware the jealousy of others"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "disciplined"
+                ],
+                "shadow": [
+                    "aimless"
+                ]
+            }
         },
         {
             "name": "Strength",
@@ -303,7 +367,15 @@
                 "Your self-control will be tested",
                 "A woman will seek to change her partner or lover",
                 "You are a strong, capable person"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "brave"
+                ],
+                "shadow": [
+                    "dubitative"
+                ]
+            }
         },
         {
             "name": "The Hermit",
@@ -335,7 +407,15 @@
                 "A period of loneliness begins",
                 "One partner in a relationship departs",
                 "A search for love or money proves fruitless"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "meditative"
+                ],
+                "shadow": [
+                    "lonely"
+                ]
+            }
         },
         {
             "name": "The Wheel",
@@ -367,7 +447,15 @@
             "fortune_telling": [
                 "Some events are in the hands of heaven",
                 "You've lived through this before"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "lucky"
+                ],
+                "shadow": [
+                    "unlucky"
+                ]
+            }
         },
         {
             "name": "Justice",
@@ -400,7 +488,15 @@
                 "A legal verdict will be rendered soon",
                 "Someone is making a decision",
                 "You need to get the facts"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "fair"
+                ],
+                "shadow": [
+                    "dishonest"
+                ]
+            }
         },
         {
             "name": "The Hanged Man",
@@ -433,7 +529,15 @@
                 "A traitor is revealed",
                 "One of your friends is working against you",
                 "Change your ways or suffer the consequences"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "practical"
+                ],
+                "shadow": [
+                    "indecisive"
+                ]
+            }
         },
         {
             "name": "Death",
@@ -466,7 +570,15 @@
                 "A relationship or illness ends suddenly",
                 "Limit travel and risk-taking",
                 "General gloom and doom"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "adaptable"
+                ],
+                "shadow": [
+                    "inflexible"
+                ]
+            }
         },
         {
             "name": "Temperance",
@@ -501,7 +613,15 @@
             "fortune_telling": [
                 "Someone's using drugs or alcohol to excess",
                 "It's time to get back on that diet"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "patient"
+                ],
+                "shadow": [
+                    "greedy"
+                ]
+            }
         },
         {
             "name": "The Devil",
@@ -535,7 +655,15 @@
                 "Adultery and unfaithfulness",
                 "A string of extremely bad luck is coming your way",
                 "Beware evil influences and wolves in sheep's clothing"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "racy"
+                ],
+                "shadow": [
+                    "evil"
+                ]
+            }
         },
         {
             "name": "The Tower",
@@ -570,7 +698,15 @@
                 "Cancel plans and reverse decisions",
                 "Someone wants to take you down a notch or two",
                 "Don't hold back; say what you really mean"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "proactive"
+                ],
+                "shadow": [
+                    "fearful"
+                ]
+            }
         },
         {
             "name": "The Star",
@@ -605,7 +741,15 @@
                 "Get an astrology chart drawn up",
                 "Someone is a little too starstruck",
                 "What's happening now has long been fore-ordained"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "hopeful"
+                ],
+                "shadow": [
+                    "hopeless"
+                ]
+            }
         },
         {
             "name": "The Moon",
@@ -638,7 +782,15 @@
                 "Watch for problems at the end of the month",
                 "Someone you know needs to howl at the moon more often",
                 "Someone is about to change his or her mind about an important decision"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "insightful"
+                ],
+                "shadow": [
+                    "resentful"
+                ]
+            }
         },
         {
             "name": "The Sun",
@@ -670,7 +822,15 @@
             "fortune_telling": [
                 "Everything's coming up roses (or sunflowers, whatever the case may be)",
                 "Whatever's on your mind, go for it because you can't lose today"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "optimistic"
+                ],
+                "shadow": [
+                    "pessimistic"
+                ]
+            }
         },
         {
             "name": "Judgement",
@@ -704,7 +864,15 @@
                 "An old issue you thought was over will come up again today",
                 "Get ready for huge changes: break-ups, sudden calls from old friends, and unexpected setbacks",
                 "God's trying to get your attention"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "genuine"
+                ],
+                "shadow": [
+                    "insecure"
+                ]
+            }
         },
         {
             "name": "The World",
@@ -737,7 +905,15 @@
                 "Win the lottery",
                 "Get your heart's desire",
                 "Have everything you ever imagined having"
-            ]
+            ],
+            "characterizations": {
+                "light": [
+                    "broadminded"
+                ],
+                "shadow": [
+                    "grieving"
+                ]
+            }
         },
         {
             "name": "Ace of Wands",

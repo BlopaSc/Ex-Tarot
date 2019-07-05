@@ -37,6 +37,14 @@
                 "Prepare to take something on faith",
                 "Something new comes your way; go for it"
             ],
+            "characterizations": {
+                "light": [
+                    "innocent"
+                ],
+                "shadow": [
+                    "reckless"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -374,6 +382,14 @@
                 "A powerful man may play a role in your day",
                 "Your current situation must be seen as one element of a much larger plan"
             ],
+            "characterizations": {
+                "light": [
+                    "resourceful"
+                ],
+                "shadow": [
+                    "manipulative"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -669,6 +685,14 @@
                 "A sexual secret may surface",
                 "Someone knows more than he or she will reveal"
             ],
+            "characterizations": {
+                "light": [
+                    "intuitive"
+                ],
+                "shadow": [
+                    "secretive"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -980,6 +1004,14 @@
                 "An opportunity to be involved in luxurious sexuality is coming",
                 "Beware a tendency toward addiction"
             ],
+            "characterizations": {
+                "light": [
+                    "beautiful"
+                ],
+                "shadow": [
+                    "needful"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -1303,6 +1335,14 @@
                 "A new employer or authority figure will give you orders",
                 "Expect discipline or correction in the near future"
             ],
+            "characterizations": {
+                "light": [
+                    "fatherly"
+                ],
+                "shadow": [
+                    "dictatorial"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -1583,6 +1623,14 @@
                 "Pray for forgiveness and confess wrongdoings",
                 "A more experienced man, spiritual leader, or father figure will come into your life"
             ],
+            "characterizations": {
+                "light": [
+                    "spiritual"
+                ],
+                "shadow": [
+                    "immoral"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -1891,6 +1939,14 @@
                 "Sexual opportunities abound",
                 "Unexpectedly, a friend becomes a lover"
             ],
+            "characterizations": {
+                "light": [
+                    "lovely"
+                ],
+                "shadow": [
+                    "selfish"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -2168,6 +2224,14 @@
                 "Move ahead with all plans",
                 "Beware the jealousy of others"
             ],
+            "characterizations": {
+                "light": [
+                    "disciplined"
+                ],
+                "shadow": [
+                    "aimless"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -2429,6 +2493,14 @@
                 "A woman will seek to change her partner or lover",
                 "You are a strong, capable person"
             ],
+            "characterizations": {
+                "light": [
+                    "brave"
+                ],
+                "shadow": [
+                    "dubitative"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -2661,6 +2733,14 @@
                 "One partner in a relationship departs",
                 "A search for love or money proves fruitless"
             ],
+            "characterizations": {
+                "light": [
+                    "meditative"
+                ],
+                "shadow": [
+                    "lonely"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -2923,6 +3003,14 @@
                 "Some events are in the hands of heaven",
                 "You've lived through this before"
             ],
+            "characterizations": {
+                "light": [
+                    "lucky"
+                ],
+                "shadow": [
+                    "unlucky"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -3171,6 +3259,14 @@
                 "Someone is making a decision",
                 "You need to get the facts"
             ],
+            "characterizations": {
+                "light": [
+                    "fair"
+                ],
+                "shadow": [
+                    "dishonest"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -3449,6 +3545,14 @@
                 "One of your friends is working against you",
                 "Change your ways or suffer the consequences"
             ],
+            "characterizations": {
+                "light": [
+                    "practical"
+                ],
+                "shadow": [
+                    "indecisive"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -3712,6 +3816,14 @@
                 "Limit travel and risk-taking",
                 "General gloom and doom"
             ],
+            "characterizations": {
+                "light": [
+                    "adaptable"
+                ],
+                "shadow": [
+                    "inflexible"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -3977,6 +4089,14 @@
                 "Someone's using drugs or alcohol to excess",
                 "It's time to get back on that diet"
             ],
+            "characterizations": {
+                "light": [
+                    "patient"
+                ],
+                "shadow": [
+                    "greedy"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -4286,6 +4406,14 @@
                 "A string of extremely bad luck is coming your way",
                 "Beware evil influences and wolves in sheep's clothing"
             ],
+            "characterizations": {
+                "light": [
+                    "racy"
+                ],
+                "shadow": [
+                    "evil"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -4581,6 +4709,14 @@
                 "Someone wants to take you down a notch or two",
                 "Don't hold back; say what you really mean"
             ],
+            "characterizations": {
+                "light": [
+                    "proactive"
+                ],
+                "shadow": [
+                    "fearful"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -4861,6 +4997,14 @@
                 "Someone is a little too starstruck",
                 "What's happening now has long been fore-ordained"
             ],
+            "characterizations": {
+                "light": [
+                    "hopeful"
+                ],
+                "shadow": [
+                    "hopeless"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -5124,6 +5268,14 @@
                 "Someone you know needs to howl at the moon more often",
                 "Someone is about to change his or her mind about an important decision"
             ],
+            "characterizations": {
+                "light": [
+                    "insightful"
+                ],
+                "shadow": [
+                    "resentful"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -5386,6 +5538,14 @@
                 "Everything's coming up roses (or sunflowers, whatever the case may be)",
                 "Whatever's on your mind, go for it because you can't lose today"
             ],
+            "characterizations": {
+                "light": [
+                    "optimistic"
+                ],
+                "shadow": [
+                    "pessimistic"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -5650,6 +5810,14 @@
                 "Get ready for huge changes: break-ups, sudden calls from old friends, and unexpected setbacks",
                 "God's trying to get your attention"
             ],
+            "characterizations": {
+                "light": [
+                    "genuine"
+                ],
+                "shadow": [
+                    "insecure"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {
@@ -5928,6 +6096,14 @@
                 "Get your heart's desire",
                 "Have everything you ever imagined having"
             ],
+            "characterizations": {
+                "light": [
+                    "broadminded"
+                ],
+                "shadow": [
+                    "grieving"
+                ]
+            },
             "stories": {
                 "third_male": {
                     "light": {

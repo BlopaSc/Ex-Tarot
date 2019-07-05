@@ -1,0 +1,92 @@
+{
+	"characterizations": [
+		{
+			"light": ["innocent"],
+			"shadow": ["reckless"]
+		},
+		{
+			"light": ["resourceful"],
+			"shadow": ["manipulative"]
+		},
+		{
+			"light": ["intuitive"],
+			"shadow": ["secretive"]
+		},
+		{
+			"light": ["beautiful"],
+			"shadow": ["needful"]
+		},
+		{
+			"light": ["fatherly"],
+			"shadow": ["dictatorial"]
+		},
+		{
+			"light": ["spiritual"],
+			"shadow": ["immoral"]
+		},
+		{
+			"light": ["lovely"],
+			"shadow": ["selfish"]
+		},
+		{
+			"light": ["disciplined"],
+			"shadow": ["aimless"]
+		},
+		{
+			"light": ["brave"],
+			"shadow": ["dubitative"]
+		},
+		{
+			"light": ["meditative"],
+			"shadow": ["lonely"]
+		},
+		{
+			"light": ["lucky"],
+			"shadow": ["unlucky"]
+		},
+		{
+			"light": ["fair"],
+			"shadow": ["dishonest"]
+		},
+		{
+			"light": ["practical"],
+			"shadow": ["indecisive"]
+		},
+		{
+			"light": ["adaptable"],
+			"shadow": ["inflexible"]
+		},
+		{
+			"light": ["patient"],
+			"shadow": ["greedy"]
+		},
+		{
+			"light": ["racy"],
+			"shadow": ["evil"]
+		},
+		{
+			"light": ["proactive"],
+			"shadow": ["fearful"]
+		},
+		{
+			"light": ["hopeful"],
+			"shadow": ["hopeless"]
+		},
+		{
+			"light": ["insightful"],
+			"shadow": ["resentful"]
+		},
+		{
+			"light": ["optimistic"],
+			"shadow": ["pessimistic"]
+		},
+		{
+			"light": ["genuine"],
+			"shadow": ["insecure"]
+		},
+		{
+			"light": ["broadminded"],
+			"shadow": ["grieving"]
+		}
+	]
+}
