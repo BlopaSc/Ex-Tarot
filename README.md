@@ -1,6 +1,6 @@
-Tarot Based Narrative Generation (Tarot-Based-NG)
+Ex-Tarot
 
-Is a project currently being worked on by Pablo Sauma Chacón from the University of Costa Rica.
+Is a project currently being worked on by Pablo Sauma ChacÃ³n from the University of Costa Rica.
 
 The work is a reproduction and extension of the work of Anne Sullivan, Mirjam Palosaari Eladhari, and Michael Cook, who previously presented an article and system of the same name (Tarot-Based Narrative Generation, available at: http://www.asdesigned.com/phd/TarotBasedNarrative.pdf).
 While plenty of the work was based in their description of the experiment in their article, the implementation was completely developed by myself (even though the code is available at: https://github.com/annetropy/tarot-narrative).
